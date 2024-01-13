@@ -1,11 +1,4 @@
 public class Player {
-    enum Weapon {
-        SWORD,
-        AXE,
-        BOW
-    }
-
-    class Player {
         private String name;
         private int healthPercentage;
         private Weapon weapon;
@@ -30,5 +23,4 @@ public class Player {
         public void restoreHealth(int healthPotion) {
             healthPercentage = Math.min(100, healthPercentage + healthPotion);
         }
-    }
 }
